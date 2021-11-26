@@ -20,4 +20,8 @@ contract Andromeda {
     function withdrawFromBalance(int withdrawnAmount) public{
         balance = balance - withdrawnAmount;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8bedad7882aba66122df93668565d9c62f24eb5b
