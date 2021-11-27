@@ -16,7 +16,8 @@ class HomePage extends StatelessWidget {
           BottomNavigationBarItem(icon: new Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
               icon: new Icon(Icons.account_balance_wallet), label: "Wallet"),
-          BottomNavigationBarItem(icon: new Icon(Icons.home), label: "Profile"),
+          BottomNavigationBarItem(
+              icon: new Icon(Icons.person), label: "Profile"),
         ],
         backgroundColor: Colors.white.withOpacity(0.9),
       ),
@@ -31,11 +32,17 @@ Widget content() {
       children: [
         Container(
             height: 230,
-            color: Colors.green,
+            decoration: BoxDecoration(
+              color: Colors.teal,
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.elliptical(200, 20),
+                bottomRight: Radius.elliptical(200, 20),
+              ),
+            ),
             child: Align(
               alignment: Alignment.center,
               child: Text(
-                "Balance",
+                "Andromeda",
                 style:
                     GoogleFonts.varelaRound(fontSize: 60, color: Colors.white),
               ),
